@@ -1,0 +1,35 @@
+.filter_groups {
+
+    display: flex; align-items: center; 
+    
+    justify-content: space-around; flex-direction: column;
+}
+
+.filter_groups  form {
+
+    width: 90%; height: 50%;
+
+    display: flex; align-items: center; 
+    
+    justify-content: space-around;
+}
+
+.filter_groups  form select {
+
+    width: 70%; height: 2.5rem;
+
+    border-radius: 4px; font-size: 14pt;
+
+    text-align: center; background: rgb(240 240 240);
+}
+
+.filter_groups  form input[type=submit] {
+
+    width: 25%; background-color: rgb(134, 147, 163);
+
+    color: white; height: 2.5rem;
+
+    border-radius: 4px; font-size: 14pt;
+
+    text-align: center;
+}

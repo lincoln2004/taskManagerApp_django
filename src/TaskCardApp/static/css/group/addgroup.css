@@ -1,0 +1,53 @@
+form {
+
+    background: white; border-radius: 4px;
+
+    width: 50%; height: 30%;
+
+    display: flex; align-items: center;
+
+    justify-content: center; flex-direction: column;
+}
+
+p {
+    width: 90%; height: 5rem;
+
+    display: flex; align-items: baseline;
+
+    justify-content: center;
+
+}
+
+p input {
+
+    width: 80%; height: 2.5rem;
+
+    background: rgb(240 240 240);
+
+    font-size: 14pt; text-align: center;
+
+    margin-left: 2rem;
+}
+
+p label {
+
+    height: 2.5rem; margin: 0;
+
+    width: 10%; text-align: start;
+
+    font-size: 16pt;
+}
+
+form input[type=submit] {
+
+    width: 30%; height: 3rem;
+
+    text-align: center; line-height: 2.5rem;
+
+    background-color: rgba(30, 100, 240);
+
+    color: white; border-radius: 4px;
+
+    font-size: 14pt;
+
+}

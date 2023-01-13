@@ -1,0 +1,60 @@
+main {
+
+   justify-content: space-around;
+
+}
+
+.utils_group {
+
+    width: 45%; height: 90%; 
+
+    border-radius: 4px; display: flex;
+
+    align-items: center; justify-content: space-around;
+
+    flex-direction: column;
+}
+
+.utils_group div {
+
+    width: 100%; height: 30%;
+
+    background: rgb(250 250 250);
+
+    box-shadow: 0 0 0.5rem 0.1rem rgba(0, 0, 0, 0.2), inset 0 0 0.2rem rgba(0, 0, 0, 0.2);
+}
+
+
+
+.group_list {
+
+    height: 90%; background: rgb(250 250 250);
+
+    width: 50%; border-radius: 4px;
+
+    box-shadow: 0 0 1rem 0.1rem rgba(0, 0, 0, 0.2), inset 0 0 0.2rem rgba(0, 0, 0, 0.2);
+
+    margin-bottom: 1rem; overflow-y: scroll;
+
+    display: inline-block; justify-content: center;
+
+}
+
+.group_list article {
+
+    width: 75%; height: 15%; margin: 2rem auto;
+
+    display: flex; justify-content: space-around;
+
+    align-items: center;
+
+    box-shadow: 0 0 1rem 0.1rem rgba(0, 0, 0, 0.2), inset 0 0 0.2rem rgba(0, 0, 0, 0.2);
+}
+
+.group_list article a {
+    color: rgb(0, 80, 200);
+}
+
+.group_list article i {
+    font-size: 24pt; color: rgb(40, 200, 100);
+}

@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+
+
+{% load static %}
+
+{% block css_block %}
+
+<link rel="stylesheet" href="{% static 'css/group/group.css' %}">
+
+<link rel="stylesheet" href="{% static 'css/group/creategroup.css' %}">
+
+<link rel="stylesheet" href="{% static 'css/group/searchgroup.css' %}">
+
+<link rel="stylesheet" href="{% static 'css/group/filter.css' %}">
+
+{% endblock %}
+
+
+{% block content %}
+
+<main>
+
+<section class="group_list">
+
+    {% for group in groups %}
+
+       <article>
+
+           <p>{{ group.name }}</p>
+
+          <a href="{% url 'inviteGroup' group.name %}">Details</a>
+
+          {% if group.part %}
+
+          <i class="ri-user-follow-line"></i>
+
+           {% else %}
+
+           <a href="{% url 'addgroup' group.name %}">Sign up</a>
+
+           {% endif %}
+
+       </article>
+
+    {% endfor %}
+</section>
+
+<section class="utils_group">
+
+    <div class="search_piece"> 
+
+        <h3>Search Group:</h3>
+
+        <form method="get">
+
+            <input type="text" name="search" >
+
+            <input type="submit" value="Search">
+
+        </form>
+    </div>
+
+    <div class="filter_groups">
+
+        <h3>Filter Groups:</h3>
+
+        <form method="get">
+
+            {% for field in filter %}
+
+               {{ field }}
+                 
+            {% endfor %}
+
+            <input type="submit" value="Filter">
+
+        </form>
+
+    </div>
+
+    <div class="create_piece">
+
+        <h3>Create new Group:</h3>
+
+        <form action="{% url 'creategroup' %}" method="post">
+
+            {% csrf_token %}
+
+            <input type="text" name="name">
+
+            <input type="submit" value="Create Group">
+        </form>
+    </div>
+
+</section>
+
+</main>
+
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+
+{% load static %}
+
+
+
+{% block css_block %}
+
+<link rel="stylesheet" href="{% static 'css/group/addgroup.css' %}">
+
+{% endblock %}
+
+
+{% block content %}
+
+<main>
+
+    <form action="{% url 'addgroup' group %}" method="post">
+
+        {% csrf_token %}
+
+        {%  for field in form %}
+
+           <p>
+
+               <label>{{ field.label }}</label>
+
+               {{ field }}
+
+           </p>
+
+        {% endfor %}
+
+        <input type="submit" value="Add Group">
+    </form>
+
+</main>
+
+{% endblock %}

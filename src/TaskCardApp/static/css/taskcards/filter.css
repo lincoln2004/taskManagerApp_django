@@ -1,0 +1,58 @@
+
+main section.filter_sec {
+
+    flex-direction: column;
+}
+
+main section form {
+
+    height: 80%; width: 100%;
+
+    display: flex; justify-content: left;
+
+    align-items: center; flex-direction: column;
+
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+
+main form div {
+
+    width: 100%; height: 3rem;
+
+    display: flex; justify-content: space-around;
+
+    align-items: center; margin: 2rem 0;
+}
+
+
+main section form label {
+
+    width: 20%; height: 3rem;
+
+    text-align: center; line-height: 3rem;
+}
+
+main section form select {
+
+    width: 70%; height: 3rem;
+
+    background-color: rgb(230 230 230);
+
+    border-radius: 4px; text-align: center;
+
+    line-height: 3rem;
+}
+
+main section form select option {
+
+   font-size: 14pt;
+}
+
+main section form input[type=submit]{
+
+    width: 70%; height: 3rem;
+
+    background: rgba(20, 90, 240);
+
+    border-radius: 4px; color: white;
+} 

@@ -1,0 +1,85 @@
+form {
+
+    width: 70%; height: 90%;
+
+    background-color: white; display: flex;
+
+    align-items: center; justify-content: center;
+
+    flex-direction: column; border-radius: 8px;
+}
+
+form h2 {
+
+    font-size: 18pt;
+}
+
+form div {
+
+    width: 90%; height: 4rem;
+
+    display: flex; justify-content: center;
+
+    align-items: center; margin: 1rem 0 ;
+}
+
+form div.textarea_field {
+
+    height: 7rem; margin: 1rem 0 3rem 0;
+}
+
+form label {
+
+    width: 30%; height: 4rem;
+
+    text-align: center; line-height: 4rem;
+}
+
+form input, form select{
+
+    width: 70%; height: 3rem;
+
+    text-align: center; line-height: 3rem;
+
+    background-color: rgb(240 240 240); border-radius: 4px;
+
+    outline: none; border: none; font-size: 14pt;
+
+}
+
+form input[type=submit] {
+
+    background-color: rgba(20, 90, 240); color: white;
+}
+
+textarea {
+
+    width: 70%; height: 120%;
+
+    text-align: center; resize: none;
+
+    outline: none; border: none;
+
+    background-color: rgb(230 230 230);
+
+    line-height: 1.5rem; font-size: 12pt;
+
+}
+
+
+textarea::-webkit-scrollbar {
+
+    width: 0.3rem;
+}
+
+textarea::-webkit-scrollbar-thumb {
+
+    background: rgb(30 30 30);
+}
+
+form select {
+
+    background: rgb(100 100 100); color: white;
+
+    border: none; outline: none;
+}

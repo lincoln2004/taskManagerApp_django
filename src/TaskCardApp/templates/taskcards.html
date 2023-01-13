@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block css_block %}
+
+    <link rel="stylesheet" href="{% static 'css/taskcards/taskcards.css' %}">
+    <link rel="stylesheet" href="{% static 'css/taskcards/filter.css' %}">
+
+{% endblock %}
+
+{% block content %} 
+    
+    <main>
+
+        <section class="root_task">
+
+            {% for task in tasks %}
+
+            <article class="taskcard_el">
+
+                <header>
+
+                    <p>{{ task.title }}</p>
+                    <div>
+                        <p class="time_p_taskcard">deadline: {{task.deadline}}</p>
+                        <p><strong>Author:</strong> {{ task.author }}</p>
+                    </div>
+
+                </header>
+
+                <div class="body_p_taskcard">
+                    <strong>Task:</strong><p> {{ task.description }}</p>
+                </div>
+            </article>
+
+            {% endfor %}
+        </section>
+
+        <section class="filter_sec">
+
+            <h3>Filter tasks:</h3>
+
+            <form method="get">
+
+                {% for field in filter %}
+
+                <div>
+
+                    {{ field.label }}
+
+                    {{ field }}
+
+                </div>
+
+                {% endfor %}
+
+                <input type="submit" value="filter">
+
+            </form>
+            
+        </section>
+
+    </main>
+    
+{% endblock %}

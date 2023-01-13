@@ -1,0 +1,31 @@
+.create_piece{
+
+    display: flex; align-items: center; 
+    
+    justify-content: space-around; flex-direction: column;
+}
+
+.create_piece form {
+
+    width: 90%; height: 50%;
+
+    display: flex; align-items: center; 
+    
+    justify-content: space-around;
+}
+
+.create_piece form input {
+
+    width: 70%; height: 2.5rem;
+
+    border-radius: 4px; font-size: 14pt;
+
+    text-align: center; background: rgb(240 240 240);
+}
+
+.create_piece form input[type=submit] {
+
+    width: 25%; background-color: rgba(20, 90, 240);
+
+    color: white;
+}

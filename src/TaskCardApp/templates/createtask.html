@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block css_block %}
+
+    <link rel="stylesheet" href="{% static 'css/createtask.css' %}">
+
+{% endblock %}
+
+    
+    
+{% block content %} 
+    
+    <main>
+
+        <form action="{% url 'createtask' %}" method="post">
+
+            <h2>Create new task</h2>
+    
+            {% csrf_token %}
+    
+            {% for field in form %}
+    
+            {% if field.id_for_label == 'id_description'%}
+    
+            <div class="textarea_field">
+                <label>{{ field.label}}</label>
+    
+                {{field}}
+            </div>
+            
+            {% else %}
+    
+            <div>
+                <label>{{ field.label}}</label>
+    
+                {{field}}
+            </div>
+    
+            {% endif %}
+    
+            {% endfor form %}
+    
+            <input type="submit" value="Create">
+        </form>
+
+    </main>
+
+{% endblock %}

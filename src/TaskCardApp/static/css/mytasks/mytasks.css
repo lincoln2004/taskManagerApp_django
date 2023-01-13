@@ -1,0 +1,75 @@
+section {
+
+    width: 95%; height: 90%;
+
+    background-color: white; display: inline-block;
+
+    border-radius: 4px; box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+section header {
+
+    width: 95%; height: 4rem;
+
+    display: flex; align-items: center;
+
+    justify-content: space-around; margin: 2rem;
+}
+
+section header strong {
+    flex: 1; height: 100%;
+
+    text-align: center; line-height: 4;
+}
+
+section header strong.actions_header{
+
+    flex: 2; height: 100%;
+
+    text-align: center; line-height: 4;
+}
+
+section article {
+
+    width: 95%; height: 4rem;
+
+    display: flex; align-items: center;
+
+    justify-content: space-around; 
+
+    box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.2);
+
+    margin: 2rem;
+}
+
+section article p {
+    flex: 1; height: 100%;
+
+    text-align: center; line-height: 4;
+}
+
+section article div {
+
+    flex: 2; height: 100%;
+
+    display: flex; align-items: center;
+
+    justify-content: space-around;
+}
+
+
+section article div a {
+
+    width: 10%; height: 80%;
+
+    text-align: center; line-height: 2.5;
+
+    color: rgb(0, 80, 200);
+
+    font-size: 16pt;
+}
+
+section article div a.task_delete_act {
+
+    color: rgb(255, 39, 27);
+}

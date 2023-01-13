@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block css_block %}
+
+    <link rel="stylesheet" href="{% static 'css/mytasks/mytasks.css' %}">
+
+{% endblock %}
+
+
+{% block content %}
+
+    
+
+     <main>
+
+        <section>
+
+            <header>
+                <strong>Title</strong>
+                <strong>Author</strong>
+                <strong>Description</strong>
+                <strong>Deadline</strong>
+                <strong class="actions_header">Actions</strong>
+            </header>
+
+            {% for task in tasks %}
+
+                <article >
+
+                    <p>{{ task.title }}</p>
+                    <p>{{ task.author }}</p>
+                    <p>{{ task.description }}</p>
+                    <p>{{ task.deadline }}</p>
+
+                    <div>
+
+                        <a href="{% url 'deleteAction' task.id %}" class="task_delete_act"><i class="ri-delete-bin-7-line"></i></a>
+
+                        <a href="{% url 'updateAction' task.id %}"><i class="ri-pencil-line"></i></a>
+                        
+                    </div>
+
+                </article>
+                
+            {% endfor %}
+
+        </section>
+
+     </main>
+
+{% endblock %}

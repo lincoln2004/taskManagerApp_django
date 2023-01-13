@@ -1,0 +1,55 @@
+form {
+
+    width: 70%; height: 80%;
+
+    background: white; border-radius: 4px;
+
+    display: flex; align-items: center;
+
+    justify-content: center; flex-direction: column;
+
+
+}
+
+
+div {
+    width: 60%; height: 5rem;
+
+    display: flex; align-items: center;
+
+    justify-content: space-around;
+
+    margin: 2rem 0;
+}
+
+
+input {
+
+    width: 80%; height: 3rem;
+
+    background: rgb(230 230 230);
+
+    text-align: center; line-height: 3rem;
+
+    font-size: 14pt; border-radius: 4px;
+}
+
+input[type=submit] {
+
+    background: rgba(20, 90, 240); color: white;
+
+    width: 60%;
+}
+
+textarea {
+    width: 75%; height: 5rem;
+
+    background: rgb(230 230 230);
+
+    text-align: start; line-height: 1.5rem;
+
+    padding: 0.5rem; resize: none;
+
+    font-size: 12pt;
+
+}

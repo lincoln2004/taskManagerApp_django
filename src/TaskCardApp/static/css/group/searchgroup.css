@@ -1,0 +1,31 @@
+.search_piece{
+
+    display: flex; align-items: center; 
+    
+    justify-content: space-around; flex-direction: column;
+}
+
+.search_piece form {
+
+    width: 90%; height: 50%;
+
+    display: flex; align-items: center; 
+    
+    justify-content: space-around;
+}
+
+.search_piece form input {
+
+    width: 75%; height: 2.5rem;
+
+    border-radius: 4px; font-size: 14pt;
+
+    text-align: center; background: rgb(240 240 240);
+}
+
+.search_piece form input[type=submit] {
+
+    width: 20%; background-color: rgb(134, 147, 163);
+
+    color: white;
+}

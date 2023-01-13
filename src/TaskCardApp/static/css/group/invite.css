@@ -1,0 +1,32 @@
+article {
+
+    width: 60%; height: 40%;
+
+    border-radius: 4px; background: white;
+
+    display: flex; align-items: center;
+
+    justify-content: center; flex-direction: column;
+}
+
+div {
+    display: flex; align-items: center;
+
+    justify-content: center;
+
+    width: 95%; height: 40%;
+}
+
+strong {
+
+    margin-right: 1rem; user-select: none;
+}
+
+p {
+    user-select: none;
+}
+
+.token_p {
+
+    user-select: all;
+}

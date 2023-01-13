@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+
+{% load static %}
+
+
+
+{% block css_block %}
+
+<link rel="stylesheet" href="{% static 'css/group/invite.css' %}">
+
+{% endblock %}
+
+
+{% block content %}
+
+<main> 
+
+    <article>
+
+        <div>  
+
+            <strong>Group Name: </strong>
+            <p>{{ group.name }}</p>
+
+        </div>
+
+        <div>
+
+            <strong>Invite token: </strong>
+            <p class="token_p">{{ group.group_key }}</p>
+        </div>
+    </article>
+
+</main>
+
+{% endblock %}

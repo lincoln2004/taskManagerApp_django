@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    {% block css_block %}{% endblock %}
+</head>
+<body>
+
+    <nav>
+        <a href="{% url 'taskcards' %}"><i class="ri-home-2-line"></i> Home</a>
+        <a href="{% url 'createtask' %}"><i class="ri-add-line"></i> Create</a>
+        <a href="{% url 'mytasks' %}"><i class="ri-folder-user-line"></i> My tasks</a>
+        <a href="{% url 'grouplist' %}"><i class="ri-group-line"></i> Groups</a>
+        <a href="{% url 'logout' %}" class='logout'><i class="ri-logout-box-line"></i> Log out</a>
+    </nav>
+
+    {% block content %}{% endblock %}
+    
+</body>
+</html>
